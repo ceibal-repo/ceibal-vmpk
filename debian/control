@@ -1,0 +1,15 @@
+Source: ceibal-vmpk
+Section: misc
+Priority: optional
+Maintainer: Plan Ceibal <apt@plan.ceibal.edu.uy>
+Build-Depends: debhelper (>= 9.0.0)
+Standards-Version: 3.9.5
+Vcs-Git: git://github.com/ceibal-repo/ceibal-vmpk.git
+Vcs-Browser: https://github.com/ceibal-repo/ceibal-vmpk
+
+Package: ceibal-vmpk
+Architecture: all
+Depends: vmpk, timidity, timidity++
+Provides: 
+Description: Instalacion y configuración del app vmpk
+ Instala y configura la app VMPK.

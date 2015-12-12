@@ -1,0 +1,10 @@
+debian/*.log
+debian/*.substvars
+debian/*.debhelper
+debian/ceibal-vmpk
+debian/files
+*.deb
+*~
+*.db
+*.tar.gz
+~
