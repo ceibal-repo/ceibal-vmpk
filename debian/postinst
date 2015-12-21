@@ -1,0 +1,18 @@
+for HOME_U in /home/*?; do
+    USER=$( basename ${HOME_U} )
+    
+	if [ ! -d ${HOME_U}/.config ]; then
+        mkdir ${HOME_U}/.config;
+        chmod 755 ${HOME_U}/.config;
+        chown ${USER}:${USER} ${HOME_U}/.config 
+    fi
+    
+    if [ ! -d ${HOME_U}/.config/vmpk.sourceforge.net ]; then
+        mkdir ${HOME_U}/.config/vmpk.sourceforge.net;
+        chmod 755 ${HOME_U}/.config/vmpk.sourceforge.net;
+        chown ${USER}:${USER} ${HOME_U}/.config/vmpk.sourceforge.net/ 
+    fi
+
+	cp virtual-midi-piano-keyboard.conf  ${HOME_U}/.config/vmpk.sourceforge.net/"Virtual MIDI Piano Keyboard.conf"
+    chown ${USER}:${USER} ${HOME_U}/.config/vmpk.sourceforge.net/"Virtual MIDI Piano Keyboard.conf" 
+done

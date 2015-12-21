@@ -9,7 +9,7 @@ Vcs-Browser: https://github.com/ceibal-repo/ceibal-vmpk
 
 Package: ceibal-vmpk
 Architecture: all
-Depends: vmpk, timidity, timidity++
+Depends: vmpk, timidity
 Provides: 
 Description: Instalacion y configuración del app vmpk
  Instala y configura la app VMPK.
